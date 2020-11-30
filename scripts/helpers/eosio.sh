@@ -318,7 +318,7 @@ function ensure-libpq-and-libpqxx() {
                 cd .. && rm -rf libpqxx-7.2.1
         elif [[ $NAME == "CentOS Linux" ]]; then
             #install libpq
-            yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm && \
+            yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm && \
                 yum install -y postgresql13-devel 
             PostgreSQL_ROOT=/usr/pgsql-13   
             PKG_CONFIG_PATH=/usr/pgsql-13/lib/pkgconfig
